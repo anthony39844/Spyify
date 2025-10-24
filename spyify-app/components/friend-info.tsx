@@ -1,5 +1,5 @@
 import FriendInfoCard from "./friend-info-card";
-
+import Container from "./container";
 interface FriendInfoProps {
   name: string;
   artists: string[];
@@ -12,11 +12,10 @@ interface FriendListProps {
 
 export default function FriendInfo({ friends }: FriendListProps) {
   return (
-    <div className="w-1/4 border border-gray-700 rounded-lg bg-black p-4 overflow-y-auto">
-      <h2 className="text-white text-xl font-semibold mb-4">Friends</h2>
+    <Container text="Friends" width="1/4">
       {friends?.map((friend, index) => (
         <FriendInfoCard key={index} {...friend} />
       ))}
-    </div>
+    </Container>
   );
 }
