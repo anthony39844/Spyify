@@ -12,7 +12,7 @@ interface FriendListProps {
 
 export default function FriendInfo({ friends }: FriendListProps) {
   return (
-    <Container text="Friends" width="1/4">
+    <Container text="Friends" width="full" height="full">
       {friends?.map((friend, index) => (
         <FriendInfoCard key={index} {...friend} />
       ))}

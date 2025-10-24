@@ -1,4 +1,4 @@
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/navbar/navbar";
 import Container from "@/components/container";
 import LeaderboardInfoCard from "@/components/leaderboard-info-card";
 interface LeaderboardEntry {
@@ -15,7 +15,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="m-0">
+    <div className="p-4 flex flex-col h-screen gap-4">
       <Navbar />
       <Container text="Leaderboard" width="fill" height="auto">
         {leaderboardData

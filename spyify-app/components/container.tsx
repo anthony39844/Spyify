@@ -13,11 +13,11 @@ export default function Container({
 }: ContainerProps) {
   return (
     <div
-      className={`w-${width || "1/4"} h-${
-        height || "auto"
-      } border border-gray-700 rounded-lg bg-black p-4 overflow-y-auto`}
+      className={`w-${width || "full"} h-${
+        height || "full"
+      } rounded-3xl w-full h-full bg-[#191414] p-4 overflow-y-auto`}
     >
-      <h2 className="text-white text-xl font-semibold mb-4">{text}</h2>
+      <h1 className="text-white text-3xl font-semibold mb-4">{text}</h1>
       {children}
     </div>
   );

@@ -18,7 +18,7 @@ export default function LeaderboardInfoCard({
   rank,
 }: LeaderboardEntry) {
   return (
-    <div className="flex items-center p-4 border border-gray-700 rounded-full mb-4 bg-gray-800 text-white">
+    <div className="flex items-center p-4 rounded-full mb-4 hover:bg-[#3a3a3a] rounded-3xl p-4 bg-[#262424] text-white ">
       {rank && <span className="mr-4 font-bold">{rank}.</span>}
       {profileImage && (
         <img

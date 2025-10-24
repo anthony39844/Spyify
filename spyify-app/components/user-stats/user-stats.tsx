@@ -1,8 +1,8 @@
 import UserStatsCard from "./user-stats-card";
+import Container from "../container";
 export default function UserStats({ user, stats }: { user: string; stats: any }) {
   return (
-    <div className="w-full h-full p-8 overflow-y-auto">
-      <h1 className="text-white text-3xl font-semibold mb-4">{user}'s Stats</h1>
+    <Container text={`${user}'s Stats`} width="full" height="full">
       <div className="text-white">
         {stats.map((statCategory: any) => (
             <div key={statCategory.type} className="mb-4">
@@ -10,6 +10,6 @@ export default function UserStats({ user, stats }: { user: string; stats: any })
             </div>
         ))}
       </div>
-    </div>
+    </Container>
   );
 }
