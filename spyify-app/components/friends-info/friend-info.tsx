@@ -1,5 +1,5 @@
 import FriendInfoCard from "./friend-info-card";
-import Container from "./container";
+import Container from "../container";
 interface FriendInfoProps {
   name: string;
   artists: string[];
