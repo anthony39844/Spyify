@@ -3,7 +3,7 @@ export default function Navbar() {
   return (
     <div className="flex w-full justify-between items-center">
       <div className="flex-1">
-        <h1 className="p-4 text-6xl font-bold">Spyify</h1>
+        <h1 className="p-2 text-6xl font-bold">Spyify</h1>
       </div>
       <div className="flex items-center gap-4 pr-4">
         <div>
